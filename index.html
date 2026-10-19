@@ -14,172 +14,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
         integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-        <link rel="stylesheet" href="responsive.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Poppins", sans-serif;
-            color: white;
-             ::selection {
-                background-color: #FAB700;
-                color: white;
-            }
-        
-        }
+    <link rel="stylesheet" href="responsive.css">
+    <!-- Linear Font -->
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="style.css">
 
-        header {
-            background-color: black;
-            position: sticky;
-            top:0;
-
-        }
-
-        .logo {
-            display: flex;
-           position: relative;
-           right: 5%;
-
-        }
-
-        .nav-container {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            padding: 1rem 0px
-        }
-
-
-
-        #bar {
-            font-size: 1.5rem;
-            display: none;
-        }
-
-         ul {
-            display: flex;
-            gap: 1.4rem;
-            font-size: .75rem;
-
-        }
-
-        li {
-            list-style-type: none;
-        }
-
-        a {
-            text-decoration: none;
-            color: white
-        }
-
-        /* Hero section */
-        body {
-            background-image: url(img/hero-bg.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-        }
-
-        .hero-bg {
-            height: 95vh;
-            background-color: transparent;
-        }
-
-        .overlay {
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .line1 {
-            font-size: 1.3rem;
-            letter-spacing: .2rem;
-        }
-
-        .line2 {
-            font-size: 5rem;
-        }
-
-        .line3 {
-            font-size: .9rem;
-            text-align: center;
-            width: 40rem;
-        }
-
-        .overlay button {
-            background-color: #fab700;
-            padding: .8rem 2rem;
-            border-radius: 2rem;
-            margin: 1.5rem 0px;
-            border: none;
-            border: 1px solid #fab700;
-            transition: .2s;
-        }
-
-        .overlay button:hover {
-            border: 1px solid white;
-            background-color: transparent;
-        }
-
-        /* Skill section */
-        .section2{
-            height: 60vh;
-            background-color: white;
-            border-bottom: 1px solid #777777;
-        }
-        .card-container{
-            display:flex;
-            height: 100%;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem;
-            gap: 2rem;
-        }
-        .card{
-            width: 26%;
-            transform:scale(.95)
-        }
-        .line-1{
-            font-size: 1.2rem;
-            font-weight: 600;
-            padding: .8rem 0px;
-            color: black;
-        }
-        .line-2{
-            color: #777777;
-        }
-        .card img{
-            height: 65px;
-            width: 65px;
-            
-        }
-
-       
-    </style>
 </head>
 
 <body>
     <header>
-        <div class="nav-container">
-            <div class="logo">
-                <img src="img/logo.png" alt="">
+        <div class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index.html">FEATURE</a></li>
+                    <li><a href="index.html">PROJECT</a></li>
+                    <li><a href="index.html">SERVICE</a></li>
+                    <li><a href="index.html">BLOG</a></li>
+                    <li><a href="index.html">CONTACT</a></li>
+                    <li><a href="index.html">PAGES</a>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </li>
+                </ul>
+                <i class="fa-solid fa-bars" id="bar"></i>
             </div>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="index.html">FEATURE</a></li>
-                <li><a href="index.html">PROJECT</a></li>
-                <li><a href="index.html">SERVICE</a></li>
-                <li><a href="index.html">BLOG</a></li>
-                <li><a href="index.html">CONTACT</a></li>
-                <li><a href="index.html">PAGES</a>
-                    <i class="fa-solid fa-chevron-down"></i>
-                </li>
-            </ul>
-            <i class="fa-solid fa-bars" id="bar"></i>
         </div>
     </header>
     <section>
@@ -194,27 +55,185 @@
         </div>
     </section>
     <section class="section2">
-       <div class="card-container">
-         <div class="card">
-                <img src="img/f1.png" alt="">
+        <div class="card-container">
+            <div class="card">
+                <img class="img-icon" src="img/f1.png" alt="">
                 <h1 class="line-1">Building Drawings</h1>
                 <p class="line-2">Lorem ipsum dolor sit amet, consecteturadipis icing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua.</p>
             </div>
             <div class="card">
-                <img src="img/f2.png" alt="">
+                <img class="img-icon" src="img/f2.png" alt="">
                 <h1 class="line-1">Building Drawings</h1>
                 <p class="line-2">Lorem ipsum dolor sit amet, consecteturadipis icing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua.</p>
             </div>
             <div class="card">
-                <img src="img/f3.png" alt="">
+                <img class="img-icon" src="img/f3.png" alt="">
                 <h1 class="line-1">Building Drawings</h1>
                 <p class="line-2">Lorem ipsum dolor sit amet, consecteturadipis icing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua.</p>
             </div>
-       </div>
+        </div>
     </section>
+
+    <section class="section3">
+        <div class="container">
+
+            <div class="title">
+                <h1>Some Features that Made us Special</h1>
+                <p>Who are in extremely love with eco friendly system.</p>
+            </div>
+            <div class="card-list">
+                <div class="card2">
+                    <img class="img-big" src="img/s1.png" alt="">
+                    <h1 class="line-1">Basic & Common Repairs</h1>
+                    <p class="line-2">Computer users and programmers have become so accustomed to using Windows, even
+                        for the changing
+                        capabilities and the appearances of the graphical.</p>
+                </div>
+                <div class="card2">
+                    <img class="img-big" src="img/s1.png" alt="">
+                    <h1 class="line-1">Basic & Common Repairs</h1>
+                    <p class="line-2">Computer users and programmers have become so accustomed to using Windows, even
+                        for the changing
+                        capabilities and the appearances of the graphical.</p>
+                </div>
+                <div class="card2">
+                    <img class="img-big" src="img/s1.png" alt="">
+                    <h1 class="line-1">Basic & Common Repairs</h1>
+                    <p class="line-2">Computer users and programmers have become so accustomed to using Windows, even
+                        for the changing
+                        capabilities and the appearances of the graphical.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section4">
+        <div class="container">
+
+            <div class="title">
+                <h1>Why we are the best</h1>
+                <p>Who are in extremely love with eco friendly system.</p>
+            </div>
+            <div class="card-list">
+                <div class="card2">
+                    <div class="card-heading">
+                        <div class="user"><span class="lnr lnr-user"></span></div>
+                        <h1 class="line-1"> Expert Technician</h1>
+                    </div>
+                    <p class="line-2">Computer users and programmers have become so accustomed to using Windows, even
+                        for the changing
+                        capabilities and the appearances of the graphical.</p>
+
+                </div>
+                <div class="card2">
+                    <div class="card-heading">
+                        <div class="user"><span class="lnr lnr-user"></span></div>
+                        <h1 class="line-1"> Expert Technician</h1>
+                    </div>
+                    <p class="line-2">Computer users and programmers have become so accustomed to using Windows, even
+                        for the changing
+                        capabilities and the appearances of the graphical.</p>
+
+                </div>
+                <div class="card2">
+                    <div class="card-heading">
+                        <div class="user"><span class="lnr lnr-user"></span></div>
+                        <h1 class="line-1"> Expert Technician</h1>
+                    </div>
+                    <p class="line-2">Computer users and programmers have become so accustomed to using Windows, even
+                        for the changing
+                        capabilities and the appearances of the graphical.</p>
+
+                </div>
+                <div class="card2">
+                    <div class="card-heading">
+                        <div class="user"><span class="lnr lnr-user"></span></div>
+                        <h1 class="line-1"> Expert Technician</h1>
+                    </div>
+                    <p class="line-2">Computer users and programmers have become so accustomed to using Windows, even
+                        for the changing
+                        capabilities and the appearances of the graphical.</p>
+
+                </div>
+                <div class="card2">
+                    <div class="card-heading">
+                        <div class="user"><span class="lnr lnr-user"></span></div>
+                        <h1 class="line-1"> Expert Technician</h1>
+                    </div>
+                    <p class="line-2">Computer users and programmers have become so accustomed to using Windows, even
+                        for the changing
+                        capabilities and the appearances of the graphical.</p>
+
+                </div>
+                <div class="card2">
+                    <div class="card-heading">
+                        <div class="user"><span class="lnr lnr-user"></span></div>
+                        <h1 class="line-1"> Expert Technician</h1>
+                    </div>
+                    <p class="line-2">Computer users and programmers have become so accustomed to using Windows, even
+                        for the changing
+                        capabilities and the appearances of the graphical.</p>
+
+                </div>
+               
+
+
+            </div>
+        </div>
+    </section>
+
+
+    </section>
+   
+    <footer>
+        <div class="footer-container">
+            <div class="about">
+                <h1>About Us</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    dolore magna aliqua.</p>
+            </div>
+            <div class="contact">
+                <h1>Contact Us</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    dolore magna aliqua.</p>
+                <div class="numbers">
+                    <h2>012-6532-569-9748</h2>
+                    <h2>012-6532-569-9748</h2>
+
+                </div>
+            </div>
+            <div class="news">
+                <h1>Newsletter</h1>
+                <p>You can trust us. we only send offers, not a single spam.</p>
+                <div class="inputbox">
+                    <input type="text" placeholder="Email address">
+                    <button><span class="lnr lnr-arrow-right"></span></button>
+                </div>
+            </div>
+        </div>
+        <div class="lower-footer">
+            <p>Copyright ©2026 All rights reserved | This template is made with <span class="lnr lnr-heart"></span> by <a href="https://colorlib.com/">Colorlib</a></p>
+            <div class="icons">
+                <div class="i-bg">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                 <div class="i-bg">
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                 <div class="i-bg">
+                    <i class="fa-brands fa-dribbble"></i>
+                </div>
+                 <div class="i-bg">
+                    <i class="fa-brands fa-behance"></i>
+                </div>
+                
+            </div>
+
+        </div>
+    </footer>
 </body>
 
 </html>
